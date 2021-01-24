@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type="text/css" href="style.css">
+		<title>Calculator</title>
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<div>
+			<form name="calculate" class="cal" action="index.html" method="POST">
+				<input type="text" name="ans" id="display">
+				<br><br>
+				<input type = "button" class = "bdesign" value = "C" onclick = "calculate.ans.value=''">
+				<input type = "button" class = "bdesign" value = "<" onclick = "calculate.ans.value=calculate.ans.value.substring(0,calculate.ans.value.length*1-1)">
+				<input type = "button" class = "bdesign" value = "00" onclick = "calculate.ans.value+='00'">
+				<input type = "button" class = "operators" value = "/" onclick = "calculate.ans.value+='/'">
+				<br><br>
+				<input type = "button" class = "bdesign" value = "7" onclick = "calculate.ans.value+='7'">
+				<input type = "button" class = "bdesign" value = "8" onclick = "calculate.ans.value+='8'">
+				<input type = "button" class = "bdesign" value = "9" onclick = "calculate.ans.value+='9'">
+				<input type = "button" class = "operators" value = "*" onclick = "calculate.ans.value+='*'">
+				<br><br>
+				<input type = "button" class = "bdesign" value = "4" onclick = "calculate.ans.value+='4'">
+				<input type = "button" class = "bdesign" value = "5" onclick = "calculate.ans.value+='5'">
+				<input type = "button" class = "bdesign" value = "6" onclick ="calculate.ans.value+='6'">
+				<input type = "button" class = "operators" value = "-" onclick = "calculate.ans.value+='-'">
+				<br><br>
+				<input type = "button" class = "bdesign" value = "1" onclick = "calculate.ans.value+='1'">
+				<input type = "button" class = "bdesign" value = "2" onclick = "calculate.ans.value+='2'">
+				<input type = "button" class = "bdesign" value = "3" onclick = "calculate.ans.value+='3'">
+				<input type = "button" class = "operators" value = "+" onclick = "calculate.ans.value+='+'">
+				<br><br>
+				<input type = "button" id = "zero" value = "0" onclick = "calculate.ans.value+='0'">
+				<input type = "button" class = "bdesign" value = "." onclick = "calculate.ans.value+='.'">
+				<input type = "button" class = "operators" value = "=" onclick = "calculate.ans.value=eval(calculate.ans.value)">
+			</form>
+		</div>
+	</body>
+</html>
